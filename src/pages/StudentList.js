@@ -25,6 +25,10 @@ function StudentList() {
   return (
     <div style={{ padding: '30px', fontFamily: 'Arial' }}>
       <h2>Student Records</h2>
+      <button onClick={() => { localStorage.removeItem('token'); window.location.href='/login'; }}
+        style={{ float: 'right', padding: '8px 16px', background: '#dc3545', color: 'white', border: 'none', cursor: 'pointer' }}>
+        Logout
+      </button>
       <button onClick={() => navigate('/add-student')}
         style={{ marginBottom: '15px', padding: '8px 16px', background: '#28a745', color: 'white', border: 'none', cursor: 'pointer' }}>
         + Add Student
