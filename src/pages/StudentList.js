@@ -23,11 +23,11 @@ function StudentList() {
   };
 
   return (
-  <div style={{ padding: '30px' }}>
+  <div className='page-container'>
     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
       <h2>Student Records</h2>
       <button onClick={() => navigate('/add-student')}
-        style={{ padding: '8px 16px', background: '#28a745', color: 'white', border: 'none', cursor: 'pointer' }}>
+        style={{ padding: '8px 16px', background: '#2196F3', color: 'white', border: 'none', cursor: 'pointer' }}>
         + Add Student
       </button>
     </div>
@@ -51,11 +51,11 @@ function StudentList() {
               <td>{s.year}</td>
               <td>
                 <button onClick={() => navigate(`/edit-student/${s.id}`)}
-                  style={{ marginRight: '8px', padding: '5px 10px', background: '#ffc107', border: 'none', cursor: 'pointer' }}>
+                  style={{ marginRight: '8px', padding: '5px 10px', background: '#90CAF9',color:'white', border: 'none', cursor: 'pointer' }}>
                   Edit
                 </button>
                 <button onClick={() => handleDelete(s.id)}
-                  style={{ padding: '5px 10px', background: '#dc3545', color: 'white', border: 'none', cursor: 'pointer' }}>
+                  style={{ padding: '5px 10px', background: '#2196F3', color: 'white', border: 'none', cursor: 'pointer' }}>
                   Delete
                 </button>
               </td>

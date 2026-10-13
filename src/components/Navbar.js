@@ -14,7 +14,7 @@ function Navbar() {
 
   return (
     <nav style={{
-      background: '#1a1a2e', color: 'white', padding: '0 30px',
+      background: '#0D47A1', color: 'white', padding: '0 30px',
       display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: '60px'
     }}>
       <div style={{ fontWeight: 'bold', fontSize: '18px', cursor: 'pointer' }}
@@ -23,11 +23,11 @@ function Navbar() {
       </div>
       <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
         <span onClick={() => navigate('/')}
-          style={{ cursor: 'pointer', color: location.pathname === '/' ? '#4fc3f7' : 'white' }}>
+          style={{ cursor: 'pointer', color: location.pathname === '/' ? '#90CAF9' : 'white' }}>
           Students
         </span>
         <span onClick={() => navigate('/marks')}
-          style={{ cursor: 'pointer', color: location.pathname === '/marks' ? '#4fc3f7' : 'white' }}>
+          style={{ cursor: 'pointer', color: location.pathname === '/marks' ? '#90CAF9' : 'white' }}>
           Marks
         </span>
         <button onClick={logout}

@@ -48,8 +48,8 @@ function MarksEntry() {
   };
 
   return (
-    <div style={{ padding: '30px', fontFamily: 'Arial' }}>
-      <h2>Marks Entry</h2>
+<div className='page-container'>
+        <h2 style={{ marginBottom: '15px', fontSize: '20px' }}>Marks Entry</h2>
 
       <div style={{ marginBottom: '20px' }}>
         <label>Select Student: </label>
@@ -92,8 +92,8 @@ function MarksEntry() {
       {message && <p style={{ color: 'green', marginTop: '10px' }}>{message}</p>}
 
       {savedMarks.length > 0 && (
-        <div style={{ marginTop: '30px' }}>
-          <h3>Saved Results</h3>
+       <div style={{ marginTop: '50px', padding: '20px' }}>          
+        <h3 style={{ marginBottom: '15px', fontSize: '20px' }}>Saved Results</h3>
           <table border="1" cellPadding="10" style={{ borderCollapse: 'collapse' }}>
             <thead style={{ background: '#f0f0f0' }}>
               <tr><th>Subject</th><th>Marks</th><th>Grade</th><th>Result</th></tr>

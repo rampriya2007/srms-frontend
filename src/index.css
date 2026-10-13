@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f5f6fa;
-  color: #333;
+  background: #E3F2FD;
+  color: #000000;
 }
 
 button {
@@ -16,17 +16,17 @@ button {
 }
 
 table {
-  background: white;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  background: #eaf1f8;
+  box-shadow: 0 1px 4px #afdbff;
 }
 
 thead {
-  background: #1a1a2e !important;
+  background: #90CAF9 !important;
   color: white;
 }
 
 thead th {
-  color: white;
+  color: #444;
 }
 
 input, select {
@@ -37,5 +37,39 @@ input, select {
 
 input:focus, select:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: #FEFBD8;
+}
+td, th {
+  padding: 14px 16px;
+}
+
+tbody tr {
+  border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+  background: #cfe3fb !important;
+}
+
+table {
+  border-radius: 8px;
+  overflow: hidden;
+  border: none !important;
+}
+
+td {
+  font-size: 15px;
+  color: #444;
+}
+
+th {
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.page-container {
+  padding: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
