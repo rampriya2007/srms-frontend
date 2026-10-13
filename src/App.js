@@ -6,10 +6,12 @@ import EditStudent from './pages/EditStudent';
 import MarksEntry from './pages/MarksEntry';
 import Login from './pages/Login';
 import ProtectedRoute from './components/ProtectedRoute';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<ProtectedRoute><StudentList /></ProtectedRoute>} />
