@@ -45,6 +45,10 @@ function StudentList() {
               <td>{s.department}</td>
               <td>{s.year}</td>
               <td>
+                <button onClick={() => navigate('/marks')}
+                  style={{ marginBottom: '15px', marginLeft: '10px', padding: '8px 16px', background: '#007bff', color: 'white', border: 'none', cursor: 'pointer' }}>
+                  Enter Marks
+                </button>
                 <button onClick={() => navigate(`/edit-student/${s.id}`)}
                   style={{ marginRight: '8px', padding: '5px 10px', background: '#ffc107', border: 'none', cursor: 'pointer' }}>
                   Edit
