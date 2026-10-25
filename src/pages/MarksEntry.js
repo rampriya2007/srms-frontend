@@ -1,7 +1,6 @@
 import API_BASE from '../config';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import API_BASE from '../config';
 const STUDENTS_API = `${API_BASE}/api/students`;
 const SUBJECTS_API = `${API_BASE}/api/subjects`;
 const MARKS_API = `${API_BASE}/api/marks`;
