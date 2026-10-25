@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-const API = 'http://localhost:8080/api/students';
+import API_BASE from '../config';
+const API = `${API_BASE}/api/students`;
+
 
 function AddStudent() {
   const navigate = useNavigate();

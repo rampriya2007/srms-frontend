@@ -1,3 +1,4 @@
+import API_BASE from '../config';
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -13,7 +14,7 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:8080/api/auth/login', form)
+    axios.post(`${API_BASE}/api/auth/login`, form)
       .then(res => {
         localStorage.setItem('token', res.data.token);
         localStorage.setItem('email', res.data.email);

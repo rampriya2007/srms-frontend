@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-const API = 'http://localhost:8080/api/students';
+const API = `${API_BASE}/api/students`;
 
 function StudentList() {
   const [students, setStudents] = useState([]);

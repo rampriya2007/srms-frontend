@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
-const STUDENTS_API = 'http://localhost:8080/api/students';
-const SUBJECTS_API = 'http://localhost:8080/api/subjects';
-const MARKS_API = 'http://localhost:8080/api/marks';
+import API_BASE from '../config';
+const STUDENTS_API = `${API_BASE}/api/students`;
+const SUBJECTS_API = `${API_BASE}/api/subjects`;
+const MARKS_API = `${API_BASE}/api/marks`;
 
 function MarksEntry() {
   const [students, setStudents] = useState([]);

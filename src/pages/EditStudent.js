@@ -1,8 +1,9 @@
+import API_BASE from '../config';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
 
-const API = 'http://localhost:8080/api/students';
+const API = `${API_BASE}/api/students`;
 
 function EditStudent() {
   const { id } = useParams();
